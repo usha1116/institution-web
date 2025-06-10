@@ -6,13 +6,14 @@ import Card from '../components/Card'; // Our generic card component
 import CallToAction from '../components/CallToAction'; // Will define this next
 import { Link } from 'react-router-dom';
 // Assume you have images in assets folder
-//import schoolBuilding from '../assets/school-building.jpg';
+import schoolBuilding from '../assets/gallery/img4.jpg';
 //import studentsStudying from '../assets/students-studying.jpg';
-// import philosophyImage from '../assets/philosophy.jpg';
-// import campusView1 from '../assets/campus-view1.jpg';
-// import campusView2 from '../assets/campus-view2.jpg';
-// import newsImg1 from '../assets/news1.jpg'; // Placeholder for news images
-
+import philosophyImage from '../assets/philosophy.jpg';
+ import campusView1 from '../assets/classroom.jpg';
+ import campusView2 from '../assets/gallery/img3.jpg';
+ import newsImg1 from '../assets/gallery/img1.jpg'; // Placeholder for news images
+import scienceLab from '../assets/gallery/img2.jpg';
+import parentTeacherMeet from '../assets/meeting.jpg';
 function HomePage() {
   return (
     <div className="overflow-hidden"> {/* To prevent horizontal scroll from animations */}
@@ -23,7 +24,7 @@ function HomePage() {
         <div className="container mx-auto px-4 md:px-6 lg:px-8 flex flex-col md:flex-row items-center gap-10">
           <div className="md:w-1/2 animate-fade-in-left">
             <img
-              //src={philosophyImage} // Replace with an appropriate image
+              src={philosophyImage} // Replace with an appropriate image
               alt="School Philosophy"
               className="rounded-lg shadow-xl w-full h-auto object-cover"
             />
@@ -51,21 +52,21 @@ function HomePage() {
           <h2 className="text-4xl font-bold text-gray-800 mb-12">Our Vibrant Campus</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             <Card
-              //imageUrl={campusView1}
+              imageUrl={campusView1}
               title="Modern Classrooms"
               description="Spacious and tech-enabled learning environments."
               linkUrl="/gallery"
               linkText="View Gallery"
             />
             <Card
-              //imageUrl={campusView2}
+              imageUrl={campusView2}
               title="Sports Facilities"
               description="Fields and courts for a variety of sports."
               linkUrl="/gallery"
               linkText="View Gallery"
             />
             <Card
-              //imageUrl={schoolBuilding}
+              imageUrl={schoolBuilding}
               title="Library & Labs"
               description="Well-equipped resources for academic excellence."
               linkUrl="/gallery"
@@ -100,21 +101,21 @@ function HomePage() {
           <h2 className="text-4xl font-bold text-gray-800 mb-12">Latest News & Events</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <Card
-              //imageUrl={newsImg1}
+              imageUrl={newsImg1}
               title="Annual Sports Day Success"
               description="Our students showcased incredible talent and sportsmanship."
               linkUrl="#"
               linkText="Read More"
             />
             <Card
-              //imageUrl={newsImg1} // Use different images for real news
+              imageUrl={scienceLab} // Use different images for real news
               title="Science Fair Innovation"
               description="Young scientists presented groundbreaking projects."
               linkUrl="#"
               linkText="Read More"
             />
             <Card
-              //imageUrl={newsImg1}
+              imageUrl={parentTeacherMeet}
               title="Parent-Teacher Meet"
               description="A successful session for collaborative student development."
               linkUrl="#"

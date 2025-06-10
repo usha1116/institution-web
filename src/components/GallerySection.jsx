@@ -18,7 +18,7 @@ function GalleryPage() {
     { id: 4, src: galleryImg4, title: 'Library Reading', description: 'Students enjoying books.' },
     { id: 5, src: galleryImg5, title: 'Art Class Creativity', description: 'Young artists at work.' },
     { id: 6, src: galleryImg6, title: 'Morning Assembly', description: 'Daily gathering of students.' },
-    // Add more gallery items as needed
+  
   ];
 
   return (
@@ -41,7 +41,7 @@ function GalleryPage() {
           </div>
         ))}
       </div>
-      {/* You might consider adding a lightbox functionality here for full-screen image viewing */}
+     
     </div>
   );
 }

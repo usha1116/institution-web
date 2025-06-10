@@ -10,7 +10,7 @@ const NumberCounter = ({ targetNumber, duration = 2000, suffix = '' }) => {
     if (targetNumber === 0) return;
 
     let start = 0;
-    const increment = targetNumber / (duration / 10); // Calculate increment per 10ms
+    const increment = targetNumber / (duration / 10); 
     const timer = setInterval(() => {
       start += increment;
       if (start > targetNumber) {
