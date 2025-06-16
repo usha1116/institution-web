@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 function CallToAction() {
   return (
-    <section className="bg-gradient-to-r from-blue-700 to-indigo-800 text-white py-16 md:py-20 animate-fade-in-up">
+    <section className="bg-gradient-to-r from-blue-400 to-indigo-200 text-white py-16 md:py-20 animate-fade-in-up">
       <div className="container mx-auto px-4 md:px-6 lg:px-8 text-center">
         <h2 className="text-3xl md:text-4xl font-extrabold mb-6">
           Ready to Take the Next Step?

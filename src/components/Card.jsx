@@ -15,13 +15,13 @@ const Card = ({ imageUrl, title, description, linkUrl, linkText }) => {
 
       {/* Content */}
       <div className="absolute bottom-0 p-6 text-white opacity-0 group-hover:opacity-100 transform translate-y-10 group-hover:translate-y-0 transition-all duration-500">
-        <h3 className="text-xl font-bold relative pb-2 after:absolute after:left-0 after:bottom-0 after:w-0 group-hover:after:w-full after:h-0.5 after:bg-green-400 after:transition-all after:duration-500">
+        <h3 className="text-xl font-bold relative pb-2 after:absolute after:left-0 after:bottom-0 after:w-0 group-hover:after:w-full after:h-0.5 after:bg-blue-400 after:transition-all after:duration-500">
           {title}
         </h3>
         <p className="mt-2 text-sm text-gray-200">{description}</p>
         <Link
           to={linkUrl}
-          className="inline-block mt-4 bg-green-400 text-black px-4 py-2 rounded-full font-semibold hover:bg-white transition"
+          className="inline-block mt-4 bg-blue-200 text-black px-4 py-2 rounded-full font-semibold hover:bg-white transition"
         >
           {linkText}
         </Link>

@@ -38,7 +38,7 @@ function HomePage() {
             <p className="text-lg text-gray-700 leading-relaxed">
               Our philosophy revolves around holistic development, blending academic excellence with co-curricular activities and character building. We encourage students to explore their passions, develop strong moral values, and become responsible global citizens.
             </p>
-            <button className="mt-8 bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-3 px-6 rounded-full transition duration-300 ease-in-out transform hover:scale-105">
+            <button className="mt-8 bg-yellow-200 hover:bg-yellow-600 text-white font-bold py-3 px-6 rounded-full transition duration-300 ease-in-out transform hover:scale-105">
               Learn More About Us
             </button>
           </div>
@@ -79,7 +79,7 @@ function HomePage() {
       </section>
 
       {/* Admissions Quick Info Section */}
-      <section className="bg-blue-700 text-white py-16 md:py-20 animate-fade-in-up">
+      <section className="bg-gradient-to-r from-blue-400 to-indigo-200 text-white  py-16 md:py-20 animate-fade-in-up">
         <div className="container mx-auto px-4 md:px-6 lg:px-8 text-center">
           <h2 className="text-4xl font-bold mb-6">Admissions Open for 2025-2026!</h2>
           <p className="text-lg md:text-xl mb-8 max-w-2xl mx-auto">
