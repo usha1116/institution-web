@@ -22,3 +22,19 @@
 .animate-counter-pop {
   animation: counter-pop 0.5s ease-out forwards;
 }
+
+.card-title::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0%;
+    height: 2px;
+    background-color: #22c55e; /* green-400 */
+    transition: width 0.4s ease;
+  }
+  
+  .group:hover .card-title::after {
+    width: 100%;
+  }
+  

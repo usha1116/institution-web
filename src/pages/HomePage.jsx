@@ -20,7 +20,8 @@ function HomePage() {
       <HeroSection />
 
       {/* Why Us & Philosophy Section */}
-      <section className="py-16 md:py-24 bg-white animate-fade-in-up">
+      <section className="animate-fade-in-up">
+
         <div className="container mx-auto px-4 md:px-6 lg:px-8 flex flex-col md:flex-row items-center gap-10">
           <div className="md:w-1/2 animate-fade-in-left">
             <img

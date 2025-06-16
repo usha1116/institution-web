@@ -1,23 +1,33 @@
-// src/components/Card.jsx
-import React from 'react';
 
-function Card({ title, description, imageUrl, linkUrl, linkText = 'Read More' }) {
+import React from "react";
+import { Link } from "react-router-dom";
+
+const Card = ({ imageUrl, title, description, linkUrl, linkText }) => {
   return (
-    <div className="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105">
-      {imageUrl && (
-        <img src={imageUrl} alt={title} className="w-full h-48 object-cover" />
-      )}
-      <div className="p-6">
-        <h3 className="text-xl font-bold text-gray-800 mb-2">{title}</h3>
-        <p className="text-gray-600 text-base mb-4">{description}</p>
-        {linkUrl && (
-          <a href={linkUrl} className="text-blue-600 hover:text-blue-800 font-semibold transition-colors duration-300">
-            {linkText} &rarr;
-          </a>
-        )}
+    <div className="relative overflow-hidden rounded-lg shadow-xl group transform transition-transform duration-500 hover:scale-105 bg-black">
+      <img
+        src={imageUrl}
+        alt={title}
+        className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
+      />
+      {/* Gradient overlay */}
+      <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent opacity-100 transition-opacity duration-500 group-hover:opacity-100" />
+
+      {/* Content */}
+      <div className="absolute bottom-0 p-6 text-white opacity-0 group-hover:opacity-100 transform translate-y-10 group-hover:translate-y-0 transition-all duration-500">
+        <h3 className="text-xl font-bold relative pb-2 after:absolute after:left-0 after:bottom-0 after:w-0 group-hover:after:w-full after:h-0.5 after:bg-green-400 after:transition-all after:duration-500">
+          {title}
+        </h3>
+        <p className="mt-2 text-sm text-gray-200">{description}</p>
+        <Link
+          to={linkUrl}
+          className="inline-block mt-4 bg-green-400 text-black px-4 py-2 rounded-full font-semibold hover:bg-white transition"
+        >
+          {linkText}
+        </Link>
       </div>
     </div>
   );
-}
+};
 
 export default Card;
